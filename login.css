@@ -79,3 +79,11 @@ body{
 .logo-box p:hover{
     color: red;
 }
+
+.logo-box h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+    font-size: 13px;
+    color: tomato;
+}
