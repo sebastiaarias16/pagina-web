@@ -2,40 +2,98 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="contactanos.css"/>
-</head>
+    <link href="https://file.myfontastic.com/KaDQdR6QMmNE5J7Dg3rvzK/icons.css" rel="stylesheet">
+</head> 
 <body>
-    <div class="inicial">
-        <header>
-            <h1>CONTACTO</h1>
-        </header>
+
+    <header class="main-header">
+    <div class="container container--flex">
+       <div class= "container-logo column column--50">
+            <h1 class="logo">CONTACTO</h1>
+       </div>
+        <div class="main-header_contacInfo column column--50">
+            <p class="main-header_contacInfo_tel">
+                <span class="icon-tel">999-999-999</span>
+            </p>
+        </div>
     </div>
+    </header>
 
-    <div class="content">
-    <div class="formulario">
-        
+    <nav class="main-nav">
+        <div class="container container--flex">
+        <div class="social-icon">
+            <a href=""  class="social-icon__link"><span class="icon-facebook"></span></a>
+            <a href=""  class="social-icon__link"><span class="icon-twitter"></span></a>
+            <a href=""  class="social-icon__link"><span class="icon-mail"></span></a>
+        </div>
+        </div>
+    </nav>
 
-        <form>
-            
-            <label for="name"> Nombre </label>
-            <input type="text" placeholder="Nombre">
-            
-            <label for="correo"> Correo </label>
-            <input type="text" placeholder="Correo">
-            
-            <label for="number"> Telefono </label>
-            <input type="text" placeholder="Telefono o Celular">
+    <section class="banner">
+        <img src="img/progman.jpg" alt="" class="banner__img">
+        <div class="banner__content">dejanos tu mensaje</div>
+    </section>
 
-            <label for="Motivo"> Motivo del mensaje </label>
-            <input type="text" placeholder="Motivo">
+    <main class="main">
+        <section class="group contac">
+            <h2 class="group__title">contactenos</h2>
+            <div class="container container--flex">
+                <div class="contac-information column column--50">
+                    <h3 class="column__title">informacion de contacto</h3>
+                    <p class="column__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Explicabo corporis nulla quam quis, in veritatis aspernatur dolore nihil obcaecati maxime, 
+                        eligendi optio? 
+                    </p>
+                    <p class="column__txt"><span class="icon-tel"></span> telefono 1: 999-9999-999</p>
+                    <p class="column__txt"><span class="icon-tel"></span>telefono 2: 52654-459-2345</p>
+                    <p class="column__txt"><span class="icon-mail"></span>consultas@laempresa.com</p>
+                </div>
 
-            <label for="Mensage"> Mensage </label>
-            <input type="text" placeholder="Mensage">
+                <div class="social-icon">
+                    <a href=""  class="social-icon__link"><span class="icon-facebook"></span></a>
+                    <a href=""  class="social-icon__link"><span class="icon-twitter"></span></a>
+                    <a href=""  class="social-icon__link"><span class="icon-mail"></span></a>
+                </div>
+                <div>
+                <form action="" method="post" class="formulario column column--50">
+                    <label for="" class="formulario__label">Nombre:</label>
+                    <input type="text" class="formulario__input-txt" name="nombre">
+                    <label for="" class="formulario__label">Correo:</label>
+                    <input type="text" class="formulario__input-txt" name="correo">
+                    <label for="" class="formulario__label">Teléfono:</label>
+                    <input type="text" class="formulario__input-txt" name="telefono">
+                    <label for="" class="formulario__label">Mensaje:</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__textarea"></textarea>
+                    <input type="submit" class="btn formulario__btn" value="Enviar">
+                </form>
+                </div>
+            </section>
+        </div>
+    </main>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-    </div>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿porque visitarnos?</h2>
+                <p class="column__txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Accusamus delectus officiis esse. Voluptatibus consequatur hic delectus debitis 
+                    commodi totam? Voluptas aut iste voluptate.
+                </p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contáctanos</h2>
+                <p class="column__txt">telefono: 999-9999-999</p>
+                <p class="column__txt">consultas@laempresa.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Siguenos en nuestras redes sociales</h2>
+                <p class="column__txt"><a href="" class="icon-facebook">faceboock</a></p>
+                <p class="column__txt"><a href="" class="icon-twitter">twitter</a></p>
+            </div>
+            <p class="copy">© 2020 pagina trabajo | Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
