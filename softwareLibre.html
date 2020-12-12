@@ -1,50 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Libre</title>
-    <link rel="stylesheet" href="software.css"/>
+
+    <!---estilos--->
+
+    <link rel="stylesheet" href="software.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <header>
-            <h1>Software Libre</h1>
-        </header>
 
-        <section id="descripcion">
 
-            <article class= "descrip">
-            <p>El software libre es una cuestión de la libertad de los usuarios de ejecutar,
-                copiar, distribuir, estudiar, cambiar y mejorar el software. Más precisamente, 
-                significa que los usuarios de programas tienen las cuatro libertades esenciales.
-            </p>
-            </article>
-            <article class = "descrip">
-                <p>
-                También debería tener la libertad de hacer modificaciones y usarlas en privado, 
-                en su propio trabajo u obra, sin siquiera mencionar que existen. Si publica sus cambios, 
-                no debería estar obligado a notificarlo a alguien en particular, o de alguna forma en 
-                particular.
-                </p>
-            </article>
-            <article class = "descrip">
-                <p>
-                La libertad de ejecutar el programa significa la libertad para cualquier tipo de 
-                persona u organización de usarlo en cualquier tipo de sistema de computación, 
-                para cualquier tipo de trabajo y propósito, sin estar obligado a comunicarlo a su programador,
-                o alguna otra entidad específica. En esta libertad, el propósito de los usuarios 
-                es el que importa, no el propósito de los programadores. Como usuario es libre de 
-                ejecutar un programa para sus propósitos; y si lo distribuye a otra persona, también 
-                es libre para ejecutarlo para sus propósitos, pero usted no tiene derecho a imponerle sus 
-                propios propósitos.
-                </p>
-            </article>
+    <!--menu-navegacion-->
+    <header id ="header">
+        <nav class="menu">
+            <div class="logo-box">
+                <h1><a>Software Libre</a></h1>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+
+            <div class="list-container">
+                <ul class="lists">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#" class="activo">Software Libre</a></li>
+                    <li><a href="#">Certificaciones</a></li>
+                    <li><a href="#">Ventas</a></li>
+                    <li><a href="#">Vicion y Mision</a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Img Header-->
+        <div class="img-header">
+            <div class="Aprende">
+                <h1>Aprende Del Software Libre</h1>
+                <hr>
+                <button id="abajo">ver abajo</button>
+            </div>
+        </div>
+
+        <div class="skew-abajo"></div>
+
+    </header>
+    <!--menu-navegacion-->
+
+    <main>
+        <section class="explicacion">
+            <div class="info-container">
+                <h1>Que es</h1>
+                    <p>«Software libre» es el software que respeta la libertad de los usuarios y la comunidad. A grandes rasgos, significa que los usuarios tienen la libertad de ejecutar, copiar, distribuir, estudiar, modificar y mejorar el software. Es decir, el «software libre» es una cuestión de libertad, no de precio. Para entender el concepto, piense en «libre» como en «libre expresión», no como en «barra libre». En inglés, a veces en lugar de «free software» decimos «libre software», empleando ese adjetivo francés o español, derivado de «libertad», para mostrar que no queremos decir que el software es gratuito.</p>
+                    <p>Un programa es software libre si los usuarios tienen las cuatro libertades esenciales:
+
+                        La libertad de ejecutar el programa como se desee, con cualquier propósito (libertad 0).
+                        La libertad de estudiar cómo funciona el programa, y cambiarlo para que haga lo que usted quiera (libertad 1). El acceso al código fuente es una condición necesaria para ello.
+                        La libertad de redistribuir copias para ayudar a otros (libertad 2).
+                        La libertad de distribuir copias de sus versiones modificadas a terceros (libertad 3). Esto le permite ofrecer a toda la comunidad la oportunidad de beneficiarse de las modificaciones. El acceso al código fuente es una condición necesaria para ello.</p>
+                    <div class="about-galery">
+                        <img src="img/progcomplet.jpg" alt="">
+                        <img src="img/model-prog3.jpg" alt="">
+                        <img src="img/progtucman.jpg" alt="">
+                    </div>
+
+                    <div class="about-more"><button>leer mas</button></div>
+
+            </div>
+
         </section>
 
-        <section id= "lodem">
-            
-        </section>
-    </div>
+        <!--Siguente Parte-->
 
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="deg-footer"></div>
+        <div class="ejeZfooter">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2020 pagina trabajo | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--scripts-->
+    <script src="https://kit.fontawesome.com/bf25deddd4.js" crossorigin="anonymous"></script>
+    <script src="animacion.js"></script>
 </body>
 </html>

@@ -1,40 +1,296 @@
-body{
+:root{
+    --black:#000000;
+    --red:#841818;
+    --white:#fafafa;
+    --yellow:#e0bb20;
+}
+
+*{
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    background-size: cover;
-    font-family: sans-serif;
-    height: 100vh;
+    box-sizing: border-box;
 }
 
-header{
-    background-color: transparent;
-    height: 50px;
+body{
+    background: #ffffff;
+    overflow-x: hidden;
+    font-family: 'Lobster', cursive;
+}
+
+/**menu de navegacion**/
+#header{
+    position: relative;
     width: 100%;
-    margin: 0px;
-    text-align-last: center;
-    color: black;
+
 }
 
-header h1{
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .logo-box{
+    margin-left: 20px;
+
+}
+
+.menu .logo-box h1 a{
+    text-decoration: none;
     font-size: 35px;
-    color: black;
-    font-family: fantasy;
+    font-weight: 400;
+    color: var(--black);
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.menu .list-container .lists li{
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-#descripcion{
-    float: left;
-    width: calc(95.5%);
-    background-color:transparent;
-    min-height: 40px;
-    padding: 30px;
+.menu .list-container .lists li a.activo{
+    background: var(--red);
+    color: white;
+}
+.menu .list-container .lists li a:hover{
+    background: var(--red);
+    color: white;
 }
 
-.descrip{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: left;
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+
+/**img header**/
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/model-prog2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.img-header .Aprende{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .Aprende h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 200;
+}
+
+.img-header .Aprende hr{
+    width: 400px;
+    height: 2px;
+    background: white;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .Aprende p{
     font-size: 20px;
-    color: red;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 20px;
+}
+
+.img-header .Aprende > button{
+    width: 170px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-header .Aprende > button:hover{
+    background: var(--yellow);
+}
+
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+/**explicacion**/
+
+.explicacion{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.explicacion .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.explicacion .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.explicacion .info-container .about-galery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.explicacion .info-container .about-galery img{
+    width: calc(33.33% - 10px);
+    height: 300px;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.explicacion .info-container .about-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.explicacion .info-container .about-more button{
+    width: 120px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.explicacion .info-container .about-more button:hover{
+    background: yellow;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 40px;
+    background-color: black;
+    color: floralwhite;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+.footer .footer-text{
+    text-align: center;
+}
+
+/**Media Query**/
+
+@media only screen and (max-width:900px){
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .btn-menu > .fa-bars:hover{
+        color: var(--red);
+    }
+    .btn-menu > .fa-times{
+        color: var(--red);
+    }
+
+    .menu .list-container{
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #ffffff;
+    }
+
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 5px solid var(--red);
+    }
+
+    .menu .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+        border-bottom: 1px solid var(--red);
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        font-size: 20px;
+    }
+
+    .menu .list-container .lists li a.activo{
+        background: none;
+        color: var(--red);
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: var(--red);
+    }
+
+
 }
